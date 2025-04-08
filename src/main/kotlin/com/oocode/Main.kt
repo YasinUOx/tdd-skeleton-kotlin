@@ -10,7 +10,6 @@ fun calcCal(input: String): String {
 
     for (item in items){
         val calories = item.split("\n").mapNotNull { it.toIntOrNull() }
-        println(calories)
         val totalCals = calories.sum()
 
         if (totalCals > count) {
